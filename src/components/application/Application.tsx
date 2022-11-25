@@ -6,16 +6,22 @@ export const Application = () => {
       <p>All fields are mandatory</p>
       <form>
         <div>
-          <label htmlFor='name'>Name</label>
-          <input type="text" id='name' placeholder='FullName'/>
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="FullName"
+            value="Vishwas"
+            onChange={() => {}}
+          />
         </div>
         <div>
           <label htmlFor="bio">Bio</label>
-          <textarea id='bio' name='bio'/>
+          <textarea id="bio" name="bio" />
         </div>
         <div>
-          <label htmlFor='job-location'>Job location</label>
-          <select id='job-location'>
+          <label htmlFor="job-location">Job location</label>
+          <select id="job-location">
             <option value="">Select a country</option>
             <option value="US">United States</option>
             <option value="GB">United Kingdom</option>
@@ -26,11 +32,15 @@ export const Application = () => {
         </div>
         <div>
           <label>
-            <input type="checkbox" id="terms" />I agree to the terms and conditions
+            <input
+              type="checkbox"
+              id="terms"
+            />
+            I agree to the terms and conditions
           </label>
         </div>
         <button>Submit</button>
       </form>
     </>
-  )
-}
+  );
+};
