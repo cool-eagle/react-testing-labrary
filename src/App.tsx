@@ -3,10 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 import { Application } from './components/application/Application';
 import { Skills } from './components/skills/skills';
+import { Counter } from './components/counter/counter';
 
 function App() {
   return (
     <div className="App">
+      <Counter />
       <Skills skills={['html', 'css', 'javascript']} />
       <Application />
       <header className="App-header">

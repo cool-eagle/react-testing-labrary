@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { Skills } from "./skills";
 
-describe("Skills", () => {
+describe.skip("Skills", () => {
   const skills = ["HTML", "CSS", "JavaScript"];
 
   test('renders correctly', () => {
