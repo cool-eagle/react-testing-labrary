@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import user from "@testing-library/user-event";
 import { Counter } from "./counter";
 
-describe("counter", () => {
+describe.skip("counter", () => {
   test('renders correctly', () => {
     render(<Counter />);
     const counterElement = screen.getByRole('heading')
