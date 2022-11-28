@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { CounterTwo } from "./counter-two";
 import user from "@testing-library/user-event";
 
-describe("CounterTwo", () => {
+describe.skip("CounterTwo", () => {
   test("renders corrctly", () => {
     render(<CounterTwo count={0} />);
     const textElement = screen.getByText("Counter Two");
