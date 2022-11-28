@@ -3,7 +3,7 @@ import { Users } from "./users";
 import { rest } from "msw";
 import { server } from "../../mocks/server";
 
-describe("Users", () => {
+describe.skip("Users", () => {
   test("renders correctly", () => {
     render(<Users />);
     const textElement = screen.getByText("Users");
