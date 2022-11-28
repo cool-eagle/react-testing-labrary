@@ -12,5 +12,5 @@ export const CounterTwo = (props: CounterTwoProps) => {
         <button onClick={props.handleDecrement}>Decrement</button>
       )}
     </div>
-  )
-}
+  );
+};

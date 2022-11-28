@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export const Users = () => {
   const [users, setUsers] = useState<string[]>([]);
@@ -9,7 +9,7 @@ export const Users = () => {
       .then((data) => setUsers(data.map((user: { name: string }) => user.name)))
       .catch(() => setError("Error fetching users"));
   }, []);
-  
+
   return (
     <div>
       <h1>Users</h1>
